@@ -16,16 +16,19 @@ int main()
     SetTargetFPS(30);
 
     SceCtrlData pad;
+    SceCtrlData padOld;
     sceCtrlSetSamplingCycle(0);
     sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
     Game game;
 
-    while (true)
+    bool gameExit = false;
+
+    while (gameExit == false)
     {
         sceCtrlReadBufferPositive(&pad, 1);
 
-        game.Update(pad);
+        game.Update(pad,padOld, gameExit);
 
         BeginDrawing();
 

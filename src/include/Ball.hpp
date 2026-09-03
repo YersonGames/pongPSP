@@ -19,6 +19,7 @@ class Ball
         Ball(Vector2 getPos, float getRad);
         void Update(Player& player, Enemy& enemy);
         void Draw();
+        void DefaultVal();
 
         //Getters
         float GetX();
@@ -26,4 +27,9 @@ class Ball
         float GetW();
         float GetH();
         short int GetHmove();
+
+        //Setters
+        void SetX(float getX);
+        void SetY(float getY);
+        void SetRad(float getRad);
 };

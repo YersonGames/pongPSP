@@ -27,8 +27,16 @@ void Player::Draw()
     DrawRectangle(position.x,position.y,size.x,size.y,WHITE);
 }
 
+
+
 //Getters
 float Player::GetX() {return position.x;}
 float Player::GetY() {return position.y;}
 float Player::GetW() {return size.x;}
 float Player::GetH() {return size.y;}
+
+//Setters
+void Player::SetX(float getX) {position.x = getX;}
+void Player::SetY(float getY) {position.y = getY;}
+void Player::SetW(float getW) {size.x = getW;}
+void Player::SetH(float getH) {size.x = getH;}

@@ -12,7 +12,8 @@ target_sources(${PROJECT_NAME} PRIVATE
     src/Game.cpp
     src/Player.cpp
     src/Enemy.cpp
-    src/Ball.cpp)
+    src/Ball.cpp
+    src/Menu.cpp)
 
 target_include_directories(${PROJECT_NAME} PRIVATE src/include/)
 

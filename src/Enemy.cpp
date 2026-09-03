@@ -31,3 +31,9 @@ float Enemy::GetX() {return position.x;}
 float Enemy::GetY() {return position.y;}
 float Enemy::GetW() {return size.x;}
 float Enemy::GetH() {return size.y;}
+
+//Setters
+void Enemy::SetX(float getX) {position.x = getX;}
+void Enemy::SetY(float getY) {position.y = getY;}
+void Enemy::SetW(float getW) {size.x = getW;}
+void Enemy::SetH(float getH) {size.x = getH;}

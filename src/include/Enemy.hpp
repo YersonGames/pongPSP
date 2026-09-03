@@ -19,4 +19,10 @@ class Enemy
         float GetY();
         float GetW();
         float GetH();
+
+        //Setters
+        void SetX(float getX);
+        void SetY(float getY);
+        void SetW(float getW);
+        void SetH(float getH);
 };

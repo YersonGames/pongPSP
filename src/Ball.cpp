@@ -7,10 +7,7 @@ Ball::Ball(Vector2 getPos, float getRad)
 {
     position = getPos;
     radius = getRad;
-    xspd = 4;
-    yspd = 0;
-    hmove = -1;
-    vmove = GetRandomValue(-1,1);
+    DefaultVal();
 }
 
 void Ball::Update(Player& player, Enemy& enemy)
@@ -43,9 +40,22 @@ void Ball::Draw()
     DrawCircle(position.x,position.y,radius,WHITE);
 }
 
+void Ball::DefaultVal()
+{
+    xspd = 4;
+    yspd = 0;
+    hmove = -1;
+    vmove = GetRandomValue(-1,1);
+}
+
 //Getters
 float Ball::GetX() {return position.x;}
 float Ball::GetY() {return position.y;}
 float Ball::GetW() {return radius;}
 float Ball::GetH() {return radius;}
 short int Ball::GetHmove() {return hmove;}
+
+//Setters
+void Ball::SetX(float getX) {position.x = getX;}
+void Ball::SetY(float getY) {position.y = getY;}
+void Ball::SetRad(float getRad) {radius = getRad;}
