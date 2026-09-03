@@ -2,6 +2,8 @@
 #include <pspctrl.h>
 
 #include "Player.hpp"
+#include "Enemy.hpp"
+#include "Ball.hpp"
 
 class Game
 {
@@ -12,4 +14,6 @@ class Game
 
     private:
         Player player;
+        Enemy enemy;
+        Ball ball;
 };

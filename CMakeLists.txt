@@ -10,7 +10,9 @@ add_executable(${PROJECT_NAME})
 target_sources(${PROJECT_NAME} PRIVATE
     src/main.cpp
     src/Game.cpp
-    src/Player.cpp)
+    src/Player.cpp
+    src/Enemy.cpp
+    src/Ball.cpp)
 
 target_include_directories(${PROJECT_NAME} PRIVATE src/include/)
 
